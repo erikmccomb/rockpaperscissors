@@ -1,16 +1,17 @@
 <html>
   <head>
-  <title>Rock Paper Scissors Shoot!</title>
+    <title>Rock Paper Scissors Shoot!</title>
   </head>
-    
-  <body>
-    
+  
+  <body>  
     <h1>Rock, Paper, Scissors</h1>
-    <button onClick='choose("rock")'>Rock</button>
-    <button onClick='choose("paper")'>Paper</button>
-    <button onClick='choose("scissors")'>Scissors</button><br>
-    <button onClick='compare(user, computerChoice)'>Go!</button>
-    <p id="result"></p>
+    <a class="button" id="rock"> <img src="images/stone.jpg" width=200px height=200px> </a>
+    <a class="button" id="paper"> <img src="images/paper.jpg" width=200px height=200px> </a>
+    <a class="button" id="scissors"> <img src="images/scissor.jpg" width=200px height=200px> </a>
+    <br>
+    <h1 id="matchup"></h1>
+    <h1 id="result"></h1>
 
+    <script src="js/mainjs_new.js"></script>
   </body>
 </html>
