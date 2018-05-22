@@ -1,16 +1,51 @@
 <html>
   <head>
-    <title>Rock Paper Scissors Shoot!</title>
+    <title>Rock Paper Scissors</title>
+    <style>
+    .flex-container {
+      display: flex;
+      width: 100vw;
+      color: rgb(255, 255, 255);
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .flex-container > div {
+      display: flex;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      justify-content: center;
+    }
+    .title-box{
+      background-color: black;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .score-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    </style>
   </head>
   
-  <body>  
-    <h1>Rock, Paper, Scissors</h1>
-    <a class="button" id="rock"> <img src="images/stone.jpg" width=200px height=200px> </a>
-    <a class="button" id="paper"> <img src="images/paper.jpg" width=200px height=200px> </a>
-    <a class="button" id="scissors"> <img src="images/scissor.jpg" width=200px height=200px> </a>
-    <br>
-    <h1 id="matchup"></h1>
-    <h1 id="result"></h1>
+  <body background="images/RPStile.jpg">
+    <div class="flex-container">
+      <div class="title-box">
+        <h1>Rock, Paper, Scissors</h1>
+      </div>
+      <div>
+        <a class="button" id="rock"> <img src="images/stone.jpg" width=200px height=200px> </a>
+        <a class="button" id="paper"> <img src="images/paper.jpg" width=200px height=200px> </a>
+        <a class="button" id="scissors"> <img src="images/scissor.jpg" width=200px height=200px> </a>
+        <br>
+      </div>
+      <div class="title-box">
+        <h1 id="matchup"></h1>
+        <h1 id="result"></h1>
+      </div>
+    </div>
 
     <script src="js/mainjs_new.js"></script>
   </body>
